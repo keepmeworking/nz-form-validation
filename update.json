@@ -5,7 +5,7 @@
         "version": "1.0.0",
         "description": "Updated plugin for form validation.",
         "homepage": "https://github.com/keepmeworking/nz-form-validation",
-        "download_url": "https://github.com/keepmeworking/nz-form-validation/releases/download/v1.1.0/nz-form-validation.zip",
+        "download_url": "https://github.com/keepmeworking/nz-form-validation/releases/download/v1.0.0/nz-form-validation.zip",
         "changelog": {
             "1.0.0": "Initial release."
         },
