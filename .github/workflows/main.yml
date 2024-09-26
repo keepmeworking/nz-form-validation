@@ -3,7 +3,7 @@ name: Release and Update Version
 on:
   push:
     tags:
-      - 'v*'  # Trigger on tag pushes
+      - 'v*'  # Tag push ke time trigger kare
 
 jobs:
   update-version:
@@ -13,7 +13,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
       with:
-        fetch-depth: 0  # Ensures the full history is fetched
+        fetch-depth: 0  # Pura history fetch kare
 
     - name: Set up Node.js
       uses: actions/setup-node@v3
