@@ -1,12 +1,14 @@
 <?php
-/*
-Plugin Name: NZ Form Validation
-Plugin URI: https://yourdomain.com/nz-form-validation
-Description: Validates form fields for New Zealand websites and prevents spam submissions
-Version: 3.0
-Author: Gaurav Khokher - Developer
-Author URI: https://yourdomain.com
-*/
+/**
+ * Plugin Name: NZ Form Validation
+ * Plugin URI: https://github.com/keepmeworking/repository
+ * Description: Validates form fields for New Zealand websites and prevents spam submissions
+ * Version: 1.0.0
+ * Author: Gaurav Khokher - Developer
+ * Author URI: https://yourwebsite.com
+ * GitHub Plugin URI: https://github.com/keepmeworking/repository
+ * GitHub Branch: main
+ */
 
 // Prevent direct access to this file
 if (!defined('ABSPATH')) {

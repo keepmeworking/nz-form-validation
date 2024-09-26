@@ -1,0 +1,29 @@
+name: Update Plugin JSON
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  update-json:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Update JSON file
+        run: |
+          VERSION=$(echo "${GITHUB_REF##*/}")
+          jq --arg version "$VERSION" '.plugin.version = $version' update.json > updated.json
+          mv updated.json update.json
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "you@example.com"
+          git config --local user.name "Your Name"
+          git add update.json
+          git commit -m "Updated version to $VERSION"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
